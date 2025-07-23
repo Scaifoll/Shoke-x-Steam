@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 300px;
+    }
+
+    .info {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      text-align: center;
+      color: #000000;
+      background: linear-gradient(270deg, #6080ff, #ffd18c, #ffffff);
+      background-size: 600% 600%;
+      animation: gradientMove 5s ease infinite;
+      box-shadow: 0 0 8px rgba(96,128,255,0.4);
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="info">
+    ©Расширение создано специально для модерации Cybershoke.
+  </div>
+</body>
+</html>
