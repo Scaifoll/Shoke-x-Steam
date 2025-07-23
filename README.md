@@ -14,8 +14,8 @@
 
 1. **Clone the repository:**  
    ```bash
-   git clone <your-repo-url>
-   cd <your-repo-folder>
+   git clone [<your-repo-url>](https://github.com/Scaifoll/Shoke-x-Steam.git)
+   cd [<your-repo-folder>](https://github.com/Scaifoll/Shoke-x-Steam.git)
 
 2. **Install dependencies:**
    Using npm:
