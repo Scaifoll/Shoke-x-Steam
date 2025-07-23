@@ -14,7 +14,7 @@
 
 1. **Clone the repository:**  
    ```bash
-      git clone [https://github.com/Scaifoll/Shoke-x-Steam.git](https://github.com/Scaifoll/Shoke-x-Steam.git)
+      git clone https://github.com/Scaifoll/Shoke-x-Steam.git
       cd Shoke-x-Steam
 
 2. **Install dependencies:**
