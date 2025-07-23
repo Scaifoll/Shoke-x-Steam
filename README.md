@@ -16,7 +16,6 @@
    ```bash
    git clone <your-repo-url>
    cd <your-repo-folder>
-````
 
 2. **Install dependencies:**
    Using npm:
