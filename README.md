@@ -18,53 +18,43 @@
    cd <your-repo-folder>
 ````
 
-2. **Install dependencies:**
-   If using npm:
+Steps to build
+Clone the repository:
+git clone <your-repo-url>
+cd <your-repo-folder>
 
-   ```bash
-   npm install
-   ```
+Install dependencies:
+If using npm:
+npm install
+If using yarn:
+yarn install
 
-   If using yarn:
+Build the extension:
+If you have a build script in package.json:
+npm run build
+or
+yarn build
+If using Grunt:
+grunt build
 
-   ```bash
-   yarn install
-   ```
+Check output:
+The final extension build will be located in the /dist or /build folder (depending on your configuration).
 
-3. **Build the extension:**
-   If you have a build script in `package.json`:
+Load the extension in Opera:
 
-   ```bash
-   npm run build
-   ```
+Open Opera and navigate to opera://extensions
 
-   or
+Enable Developer Mode
 
-   ```bash
-   yarn build
-   ```
+Click Load unpacked
 
-   If using Grunt:
+Select the /dist or /build folder containing your manifest.json
 
-   ```bash
-   grunt build
-   ```
+Verify functionality:
 
-4. **Check output:**
-   The final extension build will be located in the `/dist` or `/build` folder (depending on your configuration).
+Ensure icons, popup, and scripts work as expected.
 
-5. **Load the extension in Opera:**
-
-   * Open Opera and navigate to `opera://extensions`
-   * Enable **Developer Mode**
-   * Click **Load unpacked**
-   * Select the `/dist` or `/build` folder containing your `manifest.json`
-
-6. **Verify functionality:**
-
-   * Ensure icons, popup, and scripts work as expected.
-
----
+Note: Always verify that your manifest.json is valid and contains all necessary icons and permissions before uploading.
 
 **Note:**
 Always verify that your `manifest.json` is valid and contains all necessary icons and permissions before uploading.
