@@ -18,44 +18,59 @@
    cd <your-repo-folder>
 ````
 
-Steps to build
-Clone the repository:
-git clone <your-repo-url>
-cd <your-repo-folder>
+2. **Install dependencies:**
+   Using npm:
 
-Install dependencies:
-If using npm:
-npm install
-If using yarn:
-yarn install
+   ```bash
+   npm install
+   ```
 
-Build the extension:
-If you have a build script in package.json:
-npm run build
-or
-yarn build
-If using Grunt:
-grunt build
+   Or using yarn:
 
-Check output:
-The final extension build will be located in the /dist or /build folder (depending on your configuration).
+   ```bash
+   yarn install
+   ```
 
-Load the extension in Opera:
+3. **Build the extension:**
+   If a build script is defined in `package.json`:
 
-Open Opera and navigate to opera://extensions
+   ```bash
+   npm run build
+   ```
 
-Enable Developer Mode
+   Or:
 
-Click Load unpacked
+   ```bash
+   yarn build
+   ```
 
-Select the /dist or /build folder containing your manifest.json
+   If using Grunt:
 
-Verify functionality:
+   ```bash
+   grunt build
+   ```
 
-Ensure icons, popup, and scripts work as expected.
+4. **Check output:**
+   The final build of the extension will be located in the `/dist` or `/build` folder, depending on your configuration.
 
-Note: Always verify that your manifest.json is valid and contains all necessary icons and permissions before uploading.
+5. **Load the extension in Opera:**
 
-**Note:**
-Always verify that your `manifest.json` is valid and contains all necessary icons and permissions before uploading.
+   * Open Opera and go to `opera://extensions`
+   * Enable **Developer Mode** (toggle switch)
+   * Click **Load unpacked**
+   * Select the `/dist` or `/build` folder containing the `manifest.json` file
 
+6. **Verify functionality:**
+
+   * Make sure icons, popup, and scripts work correctly.
+
+---
+
+## Notes
+
+* Always verify your `manifest.json` file is valid and contains all necessary icons and permissions before publishing.
+* Adjust the Node.js, npm, yarn, and grunt versions if your project requires specific versions.
+
+---
+
+*This guide assumes basic familiarity with Git and command line usage.*
